@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil Pessoal</title>
+    <link rel="stylesheet" href="css/profile.css">
+</head>
+<body>
+
+    <div class="profile-container">
+        <h1>Bem-vindo ao seu perfil, <span id="user"></span>!</h1>
+        <p>Aqui estão suas informações de preferência:</p>
+        <ul>
+            <li>Preferência 1: Música</li>
+            <li>Preferência 2: Filmes</li>
+            <li>Preferência 3: Esportes</li>
+        </ul>
+        <button onclick="logout()" class="btn">Sair</button>
+    </div>
+    <script>
+        // Obtém o nome do usuário e exibe na página de perfil
+        document.getElementById('user').innerText = localStorage.getItem('username');
+
+        // Função de logout
+        function logout() {
+            localStorage.removeItem('username');
+            window.location.href = 'index.html';
+        }
+    </script>
+
+    <!-- Scripts -->
+    <script src="scripts/login.js"></script>
+</body>
+</html>

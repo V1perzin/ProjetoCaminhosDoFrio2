@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/profile.css">
+</head>
+<body>
+    <!-- Div onde o header vai carregar -->
+    <div id="header-location"></div>
+
+    <div class="login-container">
+        <h1>Login</h1>
+        <form id="loginForm">
+            <div class="input-group">
+                <label for="username">Usuário</label>
+                <input type="text" id="username" name="username" placeholder="Digite seu usuário" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Senha</label>
+                <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
+            </div>
+            <button type="submit" class="btn">Entrar</button>
+        </form>
+        <p id="error-message"></p>
+    </div>
+
+    <!-- Div onde o footer vai carregar -->
+    <div id="footer-location"></div>
+
+    <!-- Scripts -->
+    <script src="scripts/login.js"></script>
+    <script>
+        // Chama a função do header
+        loadHeader();
+        loadFooter();
+    </script>
+</body>
+</html>
