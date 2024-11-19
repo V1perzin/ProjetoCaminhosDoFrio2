@@ -55,3 +55,55 @@ overflow: auto;
     padding: 5px 10px;
     border-radius: 5px;
 }
+
+/* Css restaurantes */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #e6e692;
+}
+.restaurant-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+.restaurant-card {
+    display: flex;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+.restaurant-card:hover {
+    transform: translateY(-5px);
+}
+.image-container {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+.image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.info-container {
+    flex: 2;
+    padding: 15px;
+}
+.info-container h2 {
+    font-size: 30px;
+    margin: 0;
+    color: #333;
+}
+.info-container p {
+    margin: 5px 0;
+    color: #666;
+    font-size: 20px;
+}
